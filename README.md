@@ -24,6 +24,8 @@ Many users nowadays rely on AI models like GPT, Grok, or Claude to process their
 That got me thinking: what if we could automatically remove or anonymize sensitive data before uploading it to these large language models? Manually doing so is tedious and time-consuming. To solve this, I applied my knowledge in natural language processing (NLP) and used Named Entity Recognition (NER) techniques to build a solution.
 
 I developed Local PII Extractor, a privacy-focused tool that runs entirely offline and supports Chinese. It combines spaCy and regular expressions for dual-layer detection of personally identifiable information (PII), and provides a simple graphical interface for secure, local data processing.
+## 架構
+![screenshot](png/p5.png)
 
 ## 功能說明 / Features
 
