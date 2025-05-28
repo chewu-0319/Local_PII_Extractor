@@ -5,8 +5,17 @@ A local PII (Personally Identifiable Information) extraction and replacement too
 
 ## 專案動機 / Project Motivation
 
-隨著 AI 技術的快速發展，許多人習慣將資料直接輸入至如 GPT、Grok 或 Claude 等雲端 AI 模型進行處理。然而，這些資料可能包含機敏資訊（例如電話號碼、身分證號、信用卡資訊等），直接上傳可能面臨個資外洩的風險，特別是當這些資料被用於模型訓練時，可能引發嚴重的資安危機。為了解決這一問題，**Local_PII_Extractor** 應運而生。本專案旨在提供一個完全本地的個資提取與匿名化工具，無需上傳任何資料至雲端，確保用戶資料的安全性，特別適合需要進行資料匿名化前處理的資安研究、開發測試或敏感資料處理場景。  
-With the rapid rise of AI technologies, many users input data into cloud-based AI models like GPT, Grok, or Claude for processing. However, such data may contain sensitive information (e.g., phone numbers, ID numbers, credit card details), and uploading it could pose risks of data leakage, especially if used for model training, potentially leading to serious security issues. To address this, **Local_PII_Extractor** was developed. This project provides a fully local PII extraction and anonymization tool, requiring no data uploads to the cloud, ensuring user data security. It is ideal for cybersecurity research, development testing, or scenarios requiring data anonymization preprocessing.
+許多使用者習慣將資料輸入至如 GPT, Grok或Claude等AI模型進行處理，但這些資料可能包含機敏資訊（例如電話號碼、身分證號、信用卡資訊等），直接上傳可能面臨個資外洩的風險。
+
+那我就想到，如果能在上傳資料到這些大語言模型之前，先在本地**自動**把重要資料先移除 (手動的話會很久很麻煩)，避免資料偷偷被這些公司拿去蒐集訓練，造成個資外洩，所以就結合自己在自然語言處理領域的研究，使用NER的方式去實作。
+
+開發 **Local PII Extractor**，支援中文的本地個資提取與匿名化工具，使用spaCy與正規表示式進行雙重偵測，並提供簡潔的 GUI 操作介面，讓使用者能夠在本地環境中安全地處理敏感資料。
+
+Many users nowadays rely on AI models like GPT, Grok, or Claude to process their data. However, this data often contains sensitive information—such as phone numbers, national IDs, or credit card numbers—which, if uploaded directly, poses serious privacy risks.
+
+That got me thinking: what if we could automatically remove or anonymize sensitive data before uploading it to these large language models? Manually doing so is tedious and time-consuming. To solve this, I applied my knowledge in natural language processing (NLP) and used Named Entity Recognition (NER) techniques to build a solution.
+
+I developed Local PII Extractor, a privacy-focused tool that runs entirely offline and supports Chinese. It combines spaCy and regular expressions for dual-layer detection of personally identifiable information (PII), and provides a simple graphical interface for secure, local data processing.
 
 ## 功能說明 / Features
 
@@ -25,7 +34,7 @@ With the rapid rise of AI technologies, many users input data into cloud-based A
 
 ## 🖼️ 使用介面 / User Interface
 
-主介面簡潔直觀，適合資安研究、開發測試、資料匿名化前處理。  
+主介面簡潔直觀，適合資料匿名化前處理。  
 The main interface is clean and intuitive, ideal for cybersecurity research, development testing, and data anonymization preprocessing.
 
 ![screenshot](png/p1.png)
