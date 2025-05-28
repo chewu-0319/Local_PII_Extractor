@@ -1,7 +1,15 @@
 # Local_PII_Extractor
 
-支援中文處理的本地個資提取與替換工具，使用 spaCy + 正規表示式完成雙重偵測，並提供簡潔 GUI 操作介面。  
-A local PII (Personally Identifiable Information) extraction and replacement tool supporting Chinese, utilizing spaCy and regular expressions for dual detection, with a user-friendly GUI interface.
+支援中文處理的本地個資提取與替換工具，使用 spaCy NER + 正規表示式完成雙重偵測，並提供簡潔 GUI 操作介面。  
+A local PII (Personally Identifiable Information) extraction and replacement tool supporting Chinese, utilizing spaCy NER and regular expressions for dual detection, with a user-friendly GUI interface.
+
+## 🖼️ 使用介面 / User Interface
+
+主介面簡潔直觀，適合資料匿名化前處理。  
+The main interface is clean and intuitive, ideal for cybersecurity research, development testing, and data anonymization preprocessing.
+
+![screenshot](png/p1.png)
+---
 
 ## 專案動機 / Project Motivation
 
@@ -32,12 +40,7 @@ I developed Local PII Extractor, a privacy-focused tool that runs entirely offli
 - 完全本地執行，無需上傳任何資料，保障隱私  
   Fully local execution, requiring no data uploads, ensuring privacy.
 
-## 🖼️ 使用介面 / User Interface
 
-主介面簡潔直觀，適合資料匿名化前處理。  
-The main interface is clean and intuitive, ideal for cybersecurity research, development testing, and data anonymization preprocessing.
-
-![screenshot](png/p1.png)
 
 ## 🧪 安裝與執行 / Installation and Execution
 
