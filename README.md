@@ -1,6 +1,6 @@
 # Local_PII_Extractor
 
-支援中文處理的本地個資提取與替換工具，使用 spaCy NER + 正規表示式完成雙重偵測，並提供簡潔 GUI 操作介面。  
+個資提取與替換工具，使用 spaCy NER + 正規表示式完成雙重偵測，並提供簡潔 GUI 操作介面。  
 A local PII (Personally Identifiable Information) extraction and replacement tool supporting Chinese, utilizing spaCy NER and regular expressions for dual detection, with a user-friendly GUI interface.
 
 ## 🖼️ 使用介面 / User Interface
